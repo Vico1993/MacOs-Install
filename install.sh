@@ -6,6 +6,9 @@ cp .bash_profile /Users/vico/.bash_profile
 # SETUP XCODE 
 # xcode-select --install
 
+# GOLANG
+mkdir -p $HOME/Code/Go/src/github.com/Vico1993
+
 # Installing Application 
 # /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
@@ -23,6 +26,7 @@ brew update
 brew tap caskroom/cask
 
 #Outil
+brew install go
 brew cask install git
 brew cask install iterm2
 brew cask install docker

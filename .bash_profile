@@ -7,8 +7,6 @@ export LSCOLORS=ExFxBxDxCxegedabagacad
 export HOMEBREW_CASK_OPTS="--appdir=/Users/vico/Applications"
 
 #Go PATH
-mkdir -p $HOME/Code/Go/src/github.com/Vico1993
-
 export GOPATH=$HOME/Code/Go
 export GOROOT=/usr/local/opt/go/libexec
 export PATH=$PATH:$GOPATH/bin
