@@ -33,6 +33,10 @@ brew cask install docker
 brew cask install flux
 brew cask install visual-studio-code
 
+#Outil NodeJS
+brew install node
+npm install -g grunt-cli
+
 #Communication
 brew cask install slack
 
