@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # SETUP Mac Environement
-cp .bash_profile /Users/vico/.bash_profile
+cp .bash_profile $HOME/.bash_profile
 
 # SETUP XCODE 
 # xcode-select --install
@@ -45,3 +45,7 @@ brew cask install google-chrome
 
 #Other 
 brew cask install vlc
+
+echo "Your Mac is now ready to use, thanks to use my scrypt"
+echo "If you have any feedback, please open an Issue https://github.com/Vico1993/macOs-install"
+echo "Or send me an Email : victor.piolin@gmail.com"
