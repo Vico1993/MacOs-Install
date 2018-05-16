@@ -37,6 +37,9 @@ brew cask install visual-studio-code
 brew install node
 npm install -g grunt-cli
 
+# Better Man
+npm install -g tldr
+
 #Communication
 brew cask install slack
 
