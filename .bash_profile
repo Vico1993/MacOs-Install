@@ -75,3 +75,12 @@ alias openPorts='sudo lsof -i | grep LISTEN'        # openPorts:    All listenin
 alias showBlocked='sudo ipfw list'                  # showBlocked:  All ipfw rules inc/ blocked IPs
 
 
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/vico/Downloads/google-cloud-sdk/path.bash.inc' ]; then source '/Users/vico/Downloads/google-cloud-sdk/path.bash.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/vico/Downloads/google-cloud-sdk/completion.bash.inc' ]; then source '/Users/vico/Downloads/google-cloud-sdk/completion.bash.inc'; fi
+
+# Generate gitignore with gitignore.io
+function gi() { curl -L -s https://www.gitignore.io/api/$@ ;}
