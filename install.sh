@@ -32,6 +32,7 @@ brew cask install iterm2
 brew cask install docker
 brew cask install flux
 brew cask install visual-studio-code
+brew install z
 
 #Outil NodeJS
 brew install node
