@@ -19,8 +19,8 @@ brew doctor
 brew update
 
 #Installing Mac AppStore Cli-tab
-#brew install mas
-#mas signin vicomacbook@icloud.com
+brew install mas
+mas signin vicomacbook@icloud.com
 
 #installing Brew Cask
 brew tap caskroom/cask
@@ -37,7 +37,7 @@ brew install z
 #Outil NodeJS
 brew install node
 brew install nvm
-npm install -g grunt-cli
+#npm install -g grunt-cli
 
 # Better Man
 npm install -g tldr
