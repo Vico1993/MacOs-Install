@@ -15,11 +15,11 @@ export PATH=$PATH:$GOROOT/bin
 export PATH="/usr/local/bin:$PATH"
 
 # Allias
-alias ls='ls -Gp --color=auto'
+alias ls='ls -Gp'
 alias cp='cp -iv'
 alias mv='mv -iv'
 alias mkdir='mkdir -pv'
-alias ll='ls -FGlAhp --color=auto'
+alias ll='ls -FGlAhp'
 
 alias f='open -a Finder ./'
 
