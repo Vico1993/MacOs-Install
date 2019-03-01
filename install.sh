@@ -38,6 +38,7 @@ brew install z
 brew install node
 brew install nvm
 #npm install -g grunt-cli
+brew install yarn
 
 # Better Man
 npm install -g tldr
