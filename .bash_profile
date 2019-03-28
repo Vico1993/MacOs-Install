@@ -94,3 +94,7 @@ fi
 # NODEJS -> NVM
 export NVM_DIR=~/.nvm
 source $(brew --prefix nvm)/nvm.sh
+
+# SAVE for later
+# Clean Git branch
+git branch | grep -v "master" | xargs git branch -D 
