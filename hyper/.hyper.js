@@ -6,13 +6,16 @@ module.exports = {
   config: {
     // choose either `'stable'` for receiving highly polished,
     // or `'canary'` for less polished but more frequent updates
-    updateChannel: 'stable',
+    updateChannel: 'canary',
+
+    // better tmux
+    macOptionSelectionMode: 'force',
 
     // default font size in pixels for all tabs
     fontSize: 12,
 
     // font family with optional fallbacks
-    fontFamily: '"SF Mono", "Monaco", "Inconsolata", "Fira Mono", "Droid Sans Mono", "Source Code Pro", monospace',
+    fontFamily: 'Hack, "Fira code", Menlo, "DejaVu Sans Mono", Consolas, "Lucida Console", monospace',
 
     // default font weight: 'normal' or 'bold'
     fontWeight: 'bold',
@@ -53,7 +56,7 @@ module.exports = {
 
     // if you're using a Linux setup which show native menus, set to false
     // default: `true` on Linux, `true` on Windows, ignored on macOS
-    showHamburgerMenu: '',
+    showHamburgerMenu: 'true',
 
     // set to `false` (without backticks and without quotes) if you want to hide the minimize, maximize and close buttons
     // additionally, set to `'left'` if you want them on the left, like in Ubuntu
@@ -68,21 +71,21 @@ module.exports = {
     // an array here instead of a color map object
     colors: {
       black: '#000000',
-      red: "#FF3B30",
-      green: "#4CD964",
-      yellow: "#FFCC00",
-      blue: "#0095FF",
-      magenta: "#FF2D55",
-      cyan: "#5AC8FA",
-      white: "#FFFFFF",
-      lightBlack: '#686868',
-      lightRed: "#FF3B30",
-      lightGreen: "#4CD964",
-      lightYellow: "#FFCC00",
-      lightBlue: "#0095FF",
-      lightMagenta: "#FF2D55",
-      lightCyan: "#5AC8FA",
-      lightWhite: "#FFFFFF",
+      red: '#ff0000',
+      green: '#33ff00',
+      yellow: '#ffff00',
+      blue: '#0066ff',
+      magenta: '#cc00ff',
+      cyan: '#00ffff',
+      white: '#d0d0d0',
+      lightBlack: '#808080',
+      lightRed: '#ff0000',
+      lightGreen: '#33ff00',
+      lightYellow: '#ffff00',
+      lightBlue: '#0066ff',
+      lightMagenta: '#cc00ff',
+      lightCyan: '#00ffff',
+      lightWhite: '#ffffff'
     },
 
     // the shell to run when spawning a new session (i.e. /usr/local/bin/fish)
@@ -115,7 +118,7 @@ module.exports = {
     bell: 'false',
 
     // if `true` (without backticks and without quotes), selected text will automatically be copied to the clipboard
-    copyOnSelect: false,
+    copyOnSelect: true,
 
     // if `true` (without backticks and without quotes), hyper will be set as the default protocol client for SSH
     defaultSSHApp: true,
@@ -136,7 +139,7 @@ module.exports = {
     // rendering (slower, but supports transparent backgrounds)
     webGLRenderer: true,
 
-    opacity: 0.9,
+    // opacity: 0.9,
 
     // for advanced config flags please refer to https://hyper.is/#cfg
   },
@@ -147,12 +150,8 @@ module.exports = {
   //   `hyperpower`
   //   `@company/project`
   //   `project#1.0.1`
-  plugins: [
-    "hyperborder",
-    'hyper-snazzy',
-    "hyper-opacity",
-    "hyper-tab-icons"
-  ],
+  plugins: [// "hyperborder",
+  'hyper-snazzy', "hyper-opacity", "hyper-tab-icons", 'hyperlinks', "hypercwd", "hyper-native-dark"],
 
   // in development, you can create a directory under
   // `~/.hyper_plugins/local/` and include it here

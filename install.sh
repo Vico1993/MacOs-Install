@@ -53,7 +53,7 @@ brew cask install google-chrome
 brew cask install vlc
 
 #Visual Studio Keybindings file.
-cp keybindings.json $HOME/Library/Application Support/Code/User
+cp ./code/keybindings.json $HOME/Library/Application Support/Code/User
 
 echo "Your Mac is now ready to use, thanks to use my scrypt"
 echo "If you have any feedback, please open an Issue https://github.com/Vico1993/macOs-install"
