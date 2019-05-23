@@ -9,13 +9,13 @@ module.exports = {
     updateChannel: 'stable',
 
     // default font size in pixels for all tabs
-    fontSize: 14,
+    fontSize: 12,
 
     // font family with optional fallbacks
-    fontFamily: 'Consolas, "Courier New", monospace',
+    fontFamily: '"SF Mono", "Monaco", "Inconsolata", "Fira Mono", "Droid Sans Mono", "Source Code Pro", monospace',
 
     // default font weight: 'normal' or 'bold'
-    fontWeight: 'normal',
+    fontWeight: 'bold',
 
     // font weight for bold characters: 'normal' or 'bold'
     fontWeightBold: 'bold',
@@ -68,21 +68,21 @@ module.exports = {
     // an array here instead of a color map object
     colors: {
       black: '#000000',
-      red: '#C51E14',
-      green: '#1DC121',
-      yellow: '#C7C329',
-      blue: '#0A2FC4',
-      magenta: '#C839C5',
-      cyan: '#20C5C6',
-      white: '#C7C7C7',
+      red: "#FF3B30",
+      green: "#4CD964",
+      yellow: "#FFCC00",
+      blue: "#0095FF",
+      magenta: "#FF2D55",
+      cyan: "#5AC8FA",
+      white: "#FFFFFF",
       lightBlack: '#686868',
-      lightRed: '#FD6F6B',
-      lightGreen: '#67F86F',
-      lightYellow: '#FFFA72',
-      lightBlue: '#6A76FB',
-      lightMagenta: '#FD7CFC',
-      lightCyan: '#68FDFE',
-      lightWhite: '#FFFFFF',
+      lightRed: "#FF3B30",
+      lightGreen: "#4CD964",
+      lightYellow: "#FFCC00",
+      lightBlue: "#0095FF",
+      lightMagenta: "#FF2D55",
+      lightCyan: "#5AC8FA",
+      lightWhite: "#FFFFFF",
     },
 
     // the shell to run when spawning a new session (i.e. /usr/local/bin/fish)
@@ -97,17 +97,22 @@ module.exports = {
     //
     // PowerShell on Windows
     // - Example: `C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe`
-    shell: 'C:\\Program Files\\Git\\git-cmd.exe',
+    
+    // WINDOWS SETINGS
+    // shell: 'C:\\Program Files\\Git\\git-cmd.exe',
+    // shellArgs: ['--command=usr/bin/bash.exe', '-l', '-i'],
+    // env: {TERM: 'cygwin'},
+    shell: '',
 
     // for setting shell arguments (i.e. for using interactive shellArgs: `['-i']`)
     // by default `['--login']` will be used
-    shellArgs: ['--command=usr/bin/bash.exe', '-l', '-i'],
+    shellArgs: ['--login'],
 
     // for environment variables
-    env: {TERM: 'cygwin'},
+    env: {},
 
     // set to `false` for no bell
-    bell: 'SOUND',
+    bell: 'false',
 
     // if `true` (without backticks and without quotes), selected text will automatically be copied to the clipboard
     copyOnSelect: false,
@@ -117,14 +122,23 @@ module.exports = {
 
     // if `true` (without backticks and without quotes), on right click selected text will be copied or pasted if no
     // selection is present (`true` by default on Windows and disables the context menu feature)
-    // quickEdit: true,
+    quickEdit: false,
+
+    // choose either `'vertical'`, if you want the column mode when Option key is hold during selection (Default)
+    // or `'force'`, if you want to force selection regardless of whether the terminal is in mouse events mode
+    // (inside tmux or vim with mouse mode enabled for example).
+    macOptionSelectionMode: 'vertical',
 
     // URL to custom bell
     // bellSoundURL: 'http://example.com/bell.mp3',
 
-    // for advanced config flags please refer to https://hyper.is/#cfg
+    // Whether to use the WebGL renderer. Set it to false to use canvas-based
+    // rendering (slower, but supports transparent backgrounds)
+    webGLRenderer: true,
 
     opacity: 0.9,
+
+    // for advanced config flags please refer to https://hyper.is/#cfg
   },
 
   // a list of plugins to fetch and install from npm
@@ -134,11 +148,11 @@ module.exports = {
   //   `@company/project`
   //   `project#1.0.1`
   plugins: [
-	"hyperborder",
-	'hyper-snazzy',
- 	"hyper-opacity",
-	"hyper-tab-icons"
-],
+    "hyperborder",
+    'hyper-snazzy',
+    "hyper-opacity",
+    "hyper-tab-icons"
+  ],
 
   // in development, you can create a directory under
   // `~/.hyper_plugins/local/` and include it here
